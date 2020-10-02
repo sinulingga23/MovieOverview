@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Movie Overview</title>
+	<style type="text/css">
+		body {
+			background: #eaeaea;
+		}
+
+		.row {
+			margin-top: 20px;
+		}
+
+		.row h3:first-child {
+			margin-left: 15px;
+		}
+
+		movie-item:nth-child(2n):hover {
+			background: #eeeaaa;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<header-bar></header-bar>
+	</header>
+
+	<main class="container">
+		<div class="row">
+			<div class="md-form active-pink active-pink-2 mb-3 mt-0 col-md-6 col-xs-3">
+			  <input class="form-control" id="search-movie" type="text" placeholder="Search movie" aria-label="Search">
+			</div>
+			<button class="btn btn-primary btn-sm mb-3 mt-0" id="btn-search-movie">Search!</button>
+		</div>
+
+		<div class="row" id="list-movie">
+			<h3 class="display-5">List Movie</h3>
+
+			<div class="col-md-12">
+				<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative col-md-12">
+			        <div class="col p-4 d-flex flex-column position-static">
+			          <strong class="d-inline-block mb-2 text-primary">Movie</strong>
+			          <h3 class="mb-0">AAA Cargo</h3>
+			          <div class="mb-1 text-muted">2018-01-09</div>
+			          <p class="card-text mb-auto">Part-fiction documentary into the New Silk Road. AAA Cargo traces the anticipation of infrastructure and trade on a planetary scale, following its distribution networks which are expanding across vast regions between China and Europe. Here, government efforts to speed up the movement of trade collide with more-than-human choreographies of sand, people and goods."</p>
+			        </div>
+			        <div class="col-auto d-none d-lg-block">
+			          <img src="https://image.tmdb.org/t/p/w500/52sRVFc0ODWDJqOwS7zQQ6eE4ng.jpg" width="200" height="250">
+			        </div>
+		     	</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<footer-bar></footer-bar>
+	</footer>
+
+</body>
+</html>
